@@ -13,13 +13,15 @@ public interface ISKUService {
 	/**
 	 * 
 	 * @param cart
+	 * @return
 	 */
-	void GetPrice(SKUModel cart);
+	SKUModel getCartData(String type) throws Exception;
 	
 	/**
 	 * 
 	 * @param cartData
 	 * @return
+	 * @throws Exception 
 	 */
-    Integer GetTotalPrice(List<SKUModel> cartData);
+    Integer getTotalPrice(List<SKUModel> cartData) throws Exception;
 }
